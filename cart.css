@@ -1,0 +1,102 @@
+#cartMainContainer {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+#cartMainContainer h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#totalItem {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+#boxContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+#box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+#box img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+#box h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+#box h4 {
+    font-size: 16px;
+    color: #666;
+}
+
+#totalContainer {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+#total h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#total h4 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#button {
+    margin-top: 20px;
+}
+
+#button button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+#button button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 600px) {
+    #box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    #box img {
+        width: 100%;
+        height: auto;
+    }
+}

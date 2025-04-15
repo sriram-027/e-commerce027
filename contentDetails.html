@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PRODUCT DETAILS | E-COMMERCE WEBSITE</title>
+    <link rel="icon" href="https://yt3.ggpht.com/a/AGF-l78km1YyNXmF0r3-0CycCA0HLA_i6zYn_8NZEg=s900-c-k-c0xffffffff-no-rj-mo" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="css/contentDetails.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+</head>
+
+<body>
+    <div id="header-container"></div>
+    <script>
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("header-container").innerHTML = data)
+            .catch(err => console.error("Error loading header:", err));
+    </script>
+    
+    <div id="containerProduct">
+        <!-- Content will be loaded by contentDetails.js -->
+    </div>
+    
+    <div id="footer-container"></div>
+    <script>
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("footer-container").innerHTML = data)
+            .catch(err => console.error("Error loading footer:", err));
+    </script>
+
+    <script src="js/contentDetails.js"></script>
+</body>
+</html>

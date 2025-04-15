@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>E-COMMERCE WEBSITE BY SRIRAM</title>
+    <link rel="icon" href="https://yt3.ggpht.com/a/AGF-l78km1YyNXmF0r3-0CycCA0HLA_i6zYn_8NZEg=s900-c-k-c0xffffffff-no-rj-mo" type="image/gif" sizes="16x16">
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <script src="js/jQuery3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <div id="header-container"></div>
+    <script>
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("header-container").innerHTML = data)
+            .catch(err => console.error("Error loading header:", err));
+    </script>
+
+    <!-- SLIDER -->
+    <div id="slider-container"></div>
+    <script>
+        fetch("slider.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("slider-container").innerHTML = data)
+            .catch(err => console.error("Error loading slider:", err));
+    </script>
+
+    <!-- CONTENT SECTION -->
+    <div id="content-container"></div>
+    <script>
+        fetch("content.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("content-container").innerHTML = data)
+            .catch(err => console.error("Error loading content:", err));
+    </script>
+
+    <!-- FOOTER -->
+    <div id="footer-container"></div>
+    <script>
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("footer-container").innerHTML = data)
+            .catch(err => console.error("Error loading footer:", err));
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Initialize slider after content is loaded
+            setTimeout(() => {
+                if ($('#containerSlider').length) {
+                    $('#containerSlider').slick({
+                        dots: true,
+                        infinite: true,
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 1500,
+                    });
+                }
+            }, 500);
+        });
+    </script>
+
+    <script src="js/content.js"></script>
+</body>
+</html>

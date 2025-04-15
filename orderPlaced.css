@@ -1,0 +1,61 @@
+#orderContainer {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 40px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+#check {
+    font-size: 100px;
+    color: #4CAF50;
+    margin-bottom: 30px;
+}
+
+#aboutCheck h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#aboutCheck p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+#aboutCheck a {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+#aboutCheck a:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 600px) {
+    #orderContainer {
+        margin: 50px 20px;
+        padding: 30px 20px;
+    }
+    
+    #check {
+        font-size: 80px;
+    }
+    
+    #aboutCheck h1 {
+        font-size: 28px;
+    }
+    
+    #aboutCheck p {
+        font-size: 16px;
+    }
+}
